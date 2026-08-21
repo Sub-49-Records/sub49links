@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Me Myself &amp; I EP — Leaky Eyes | Sub 49 Records</title>
+<meta name="description" content="Me Myself &amp; I EP by Leaky Eyes — Garage on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB083/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="Me Myself &amp; I EP — Leaky Eyes">
+<meta property="og:description" content="Me Myself &amp; I EP by Leaky Eyes — Garage on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB083/">
+<meta property="og:image" content="https://f4.bcbits.com/img/a4082133485_10.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2023-09-08">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://f4.bcbits.com/img/a4082133485_10.jpg" alt="Me Myself &amp; I EP cover art" loading="lazy">
+  <p class="meta">SUB083 &middot; Garage &middot; 08 SEPTEMBER 2023</p>
+  <h1>Me Myself &amp; I EP</h1>
+  <h2>Leaky Eyes</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 08 SEPTEMBER 2023</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://open.spotify.com/album/6qYboine3gFbMhrI7QwvKf" target="_blank" rel="noopener"><span>Spotify</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.apple.com/us/album/look-at-me/1704173801" target="_blank" rel="noopener"><span>Apple Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://soundcloud.com/sub49records/leaky-eyes-look-at-me" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.youtube.com/watch?v=OK9yCpJ20f4" target="_blank" rel="noopener"><span>YouTube</span><em>WATCH</em></a></li>
+      <li><a class="btn" href="https://music.youtube.com/watch?v=OK9yCpJ20f4" target="_blank" rel="noopener"><span>YouTube Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.amazon.com/albums/B0CGKCQNW7" target="_blank" rel="noopener"><span>Amazon Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.deezer.com/track/2425495045" target="_blank" rel="noopener"><span>Deezer</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://tidal.com/track/313604872" target="_blank" rel="noopener"><span>Tidal</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.qobuz.com/us-en/album/me-myself-i-ep-leaky-eyes/ors5vw2yamipc" target="_blank" rel="noopener"><span>Qobuz</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.beatport.com/track/look-at-me/18071556" target="_blank" rel="noopener"><span>Beatport</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/track/look-at-me-2" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://volumo.com/track/3883593-look-at-me-original-mix" target="_blank" rel="noopener"><span>Volumo</span><em>BUY</em></a></li>
+    </ul>
+    <h3 class="sec">Tracklist</h3>
+    <ol class="tracks">
+      <li><span>Look at Me</span><em>Leaky Eyes</em></li>
+      <li><span>Best of Me</span><em>Leaky Eyes</em></li>
+    </ol>
+    <div class="bio">
+      <p>Sometimes we need to take a hard look at ourselves in the mirror and see our self-worth. The Me Myself and I EP by Leaky Eyes will make you feel, self-reflect, and groove. This track features jazzy soft chords that ride along swift percussions and sensual vocal chops. Hailing from Chiba, Japan, this 20 year old producer was influenced by artists such as Stevie Wonder, Sammy Virji, as well as Chris Lake. He brings in elements from Jazz and Disco Music to bring you a record that can be slipped into any UKG set.</p>
+      <p>Please enjoy responsibly, and thank you for being a part of the Sub 49 Nation.</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

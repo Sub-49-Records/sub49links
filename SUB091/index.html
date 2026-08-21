@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hot Stuff — LowkeydintheHouse | Sub 49 Records</title>
+<meta name="description" content="Hot Stuff by LowkeydintheHouse — Tech House on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB091/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="Hot Stuff — LowkeydintheHouse">
+<meta property="og:description" content="Hot Stuff by LowkeydintheHouse — Tech House on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB091/">
+<meta property="og:image" content="https://i.imgur.com/ZDnz9VF.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2024-02-23">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://i.imgur.com/ZDnz9VF.png" alt="Hot Stuff cover art" loading="lazy">
+  <p class="meta">SUB091 &middot; Tech House &middot; 23 FEBRUARY 2024</p>
+  <h1>Hot Stuff</h1>
+  <h2>LowkeydintheHouse</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 23 FEBRUARY 2024</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://open.spotify.com/album/2oZkDIv4cNfn2UIgMrr6H3" target="_blank" rel="noopener"><span>Spotify</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.apple.com/us/album/ambush/1795731952" target="_blank" rel="noopener"><span>Apple Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://soundcloud.com/sub49records/lowkeydinthehouse-hot-stuff" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.youtube.com/watch?v=UGtVjHMhwEg" target="_blank" rel="noopener"><span>YouTube</span><em>WATCH</em></a></li>
+      <li><a class="btn" href="https://music.youtube.com/watch?v=UGtVjHMhwEg" target="_blank" rel="noopener"><span>YouTube Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.amazon.com/albums/B0DWTTYFYP" target="_blank" rel="noopener"><span>Amazon Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.deezer.com/track/2635943692" target="_blank" rel="noopener"><span>Deezer</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://tidal.com/track/345415933" target="_blank" rel="noopener"><span>Tidal</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.pandora.com/TR:124575705" target="_blank" rel="noopener"><span>Pandora</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.qobuz.com/us-en/album/hot-stuff-lowkeydinthehouse/y4dfvv47tjc7a" target="_blank" rel="noopener"><span>Qobuz</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.beatport.com/track/hot-stuff/18610792" target="_blank" rel="noopener"><span>Beatport</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/track/hot-stuff" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://volumo.com/track/3797255-hot-stuff-original-mix" target="_blank" rel="noopener"><span>Volumo</span><em>BUY</em></a></li>
+    </ul>
+    <div class="bio">
+      <p>Embark on a sizzling journey with the latest release on Sub 49 Records, &#x27;Hot Stuff&#x27; by the incredible artist, LowkeydintheHouse. Hailing from Colorado, now residing in Seattle, LowkeydintheHouse is a dynamic force in the local music scene.</p>
+      <p>&#x27;Hot Stuff&#x27; is a pulsating anthem that ignites the dance floor with its infectious beats and vibrant energy. Her signature style shines through, seamlessly blending elements of House and Hip Hop, pushing the sonic boundaries. The track&#x27;s irresistible groove and magnetic rhythm make it a must-have for any playlist.</p>
+      <p>Please enjoy responsibly, and thank you for being a part of the Sub 49 nation.</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

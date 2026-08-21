@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bounce EP — Collelo | Sub 49 Records</title>
+<meta name="description" content="Bounce EP by Collelo — Bass House on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB058/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="Bounce EP — Collelo">
+<meta property="og:description" content="Bounce EP by Collelo — Bass House on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB058/">
+<meta property="og:image" content="https://f4.bcbits.com/img/a1228400133_10.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2021-09-03">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://f4.bcbits.com/img/a1228400133_10.jpg" alt="Bounce EP cover art" loading="lazy">
+  <p class="meta">SUB058 &middot; Bass House &middot; 03 SEPTEMBER 2021</p>
+  <h1>Bounce EP</h1>
+  <h2>Collelo</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 03 SEPTEMBER 2021</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://open.spotify.com/album/7auFdVEowrxFTDd5AbFnQb" target="_blank" rel="noopener"><span>Spotify</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.apple.com/us/album/bounce/1582977139?i=1582977140" target="_blank" rel="noopener"><span>Apple Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://soundcloud.com/sub49records/collelo-bounce" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.youtube.com/watch?v=yysHNWSsbA4" target="_blank" rel="noopener"><span>YouTube</span><em>WATCH</em></a></li>
+      <li><a class="btn" href="https://music.youtube.com/watch?v=yysHNWSsbA4" target="_blank" rel="noopener"><span>YouTube Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.amazon.com/tracks/B0BN8RFCV9" target="_blank" rel="noopener"><span>Amazon Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.deezer.com/track/1476091822" target="_blank" rel="noopener"><span>Deezer</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://tidal.com/track/195383380" target="_blank" rel="noopener"><span>Tidal</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.pandora.com/TR:83909163" target="_blank" rel="noopener"><span>Pandora</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.qobuz.com/us-en/album/bounce-ep-collelo/mye37idmscy8b" target="_blank" rel="noopener"><span>Qobuz</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.beatport.com/track/bounce/15647655" target="_blank" rel="noopener"><span>Beatport</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/track/bounce-2" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://volumo.com/track/4238185-bounce-original-mix" target="_blank" rel="noopener"><span>Volumo</span><em>BUY</em></a></li>
+    </ul>
+    <h3 class="sec">Tracklist</h3>
+    <ol class="tracks">
+      <li><span>Bounce</span><em>Collelo</em></li>
+      <li><span>Feel Good</span><em>Collelo</em></li>
+    </ol>
+    <div class="bio">
+      <p>When it&#x27;s time to bounce, Collelo has you covered. Introducing the producer&#x27;s debut EP with Sub 49, packed with infectious grooves that will leave you wanting more. These tracks are certified tools for any well prepared crate, and can inject energy into a crowd seamlessly. As always, please enjoy responsibly, and thanks again for being a part of Sub 49 Nation.</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

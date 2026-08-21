@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wanna Rock N&#x27; Roll — Flynninho | Sub 49 Records</title>
+<meta name="description" content="Wanna Rock N&#x27; Roll by Flynninho — Bass House on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB023/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="Wanna Rock N&#x27; Roll — Flynninho">
+<meta property="og:description" content="Wanna Rock N&#x27; Roll by Flynninho — Bass House on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB023/">
+<meta property="og:image" content="https://f4.bcbits.com/img/a1148368616_10.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2020-01-16">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://f4.bcbits.com/img/a1148368616_10.jpg" alt="Wanna Rock N&#x27; Roll cover art" loading="lazy">
+  <p class="meta">SUB023 &middot; Bass House &middot; 16 JANUARY 2020</p>
+  <h1>Wanna Rock N&#x27; Roll</h1>
+  <h2>Flynninho</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 16 JANUARY 2020</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://open.spotify.com/album/6Ye1NKjFKaaz03bajSik2b" target="_blank" rel="noopener"><span>Spotify</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.apple.com/us/album/wanna/1493945587?i=1493945588" target="_blank" rel="noopener"><span>Apple Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://soundcloud.com/sub49records/flynninho-wanna" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.youtube.com/watch?v=ZGef-zMvazY" target="_blank" rel="noopener"><span>YouTube</span><em>WATCH</em></a></li>
+      <li><a class="btn" href="https://music.youtube.com/watch?v=ZGef-zMvazY" target="_blank" rel="noopener"><span>YouTube Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.deezer.com/track/848815102" target="_blank" rel="noopener"><span>Deezer</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://tidal.com/track/127754554" target="_blank" rel="noopener"><span>Tidal</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.pandora.com/TR:28312984" target="_blank" rel="noopener"><span>Pandora</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.qobuz.com/us-en/album/wanna-rock-n-roll-flynninho/vi0rwm9a3euda" target="_blank" rel="noopener"><span>Qobuz</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.beatport.com/track/wanna/13004008" target="_blank" rel="noopener"><span>Beatport</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/track/wanna-original-mix" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://volumo.com/track/4544674-wanna-original-mix" target="_blank" rel="noopener"><span>Volumo</span><em>BUY</em></a></li>
+      <li><a class="btn btn-dl" href="https://hypeddit.com/fwq3qn" target="_blank" rel="noopener"><span>Free Download</span><em>GET</em></a></li>
+    </ul>
+    <h3 class="sec">Tracklist</h3>
+    <ol class="tracks">
+      <li><span>Wanna</span><em>Flynninho</em></li>
+      <li><span>Rock N&#x27; Roll</span><em>Flynninho</em></li>
+    </ol>
+    <div class="bio">
+      <p>Sub 49 is proud to present its first release of 2020, Flynninho&#x27;s Wanna Rock n&#x27; Roll EP. Emerging from the Chicago underground, Flynninho is able to capture a lot of energy and emotion into his signature style of house - honoring the originators of Chicago house while bringing in the sound of the new era. We have strong faith you&#x27;ll be hearing this EP in a number of environments and we are prepared to rinse it out at a club near you. Keep it locked - we are bringing you only the biggest and best in 2020.</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

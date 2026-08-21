@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Witch Doctor — Ronny Berna | Sub 49 Records</title>
+<meta name="description" content="Witch Doctor by Ronny Berna — Bass House on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB048/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="Witch Doctor — Ronny Berna">
+<meta property="og:description" content="Witch Doctor by Ronny Berna — Bass House on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB048/">
+<meta property="og:image" content="https://f4.bcbits.com/img/a1184721242_10.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2021-01-29">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://f4.bcbits.com/img/a1184721242_10.jpg" alt="Witch Doctor cover art" loading="lazy">
+  <p class="meta">SUB048 &middot; Bass House &middot; 29 JANUARY 2021</p>
+  <h1>Witch Doctor</h1>
+  <h2>Ronny Berna</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 29 JANUARY 2021</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://open.spotify.com/album/1DSqxPbF3gLLTZrYBQAl6r" target="_blank" rel="noopener"><span>Spotify</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.apple.com/us/album/witch-doctor/1548279701?i=1548279702" target="_blank" rel="noopener"><span>Apple Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://soundcloud.com/sub49records/ronny-berna-witch-doctor-1" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.youtube.com/watch?v=7X3NSclgeCc" target="_blank" rel="noopener"><span>YouTube</span><em>WATCH</em></a></li>
+      <li><a class="btn" href="https://music.youtube.com/watch?v=7X3NSclgeCc" target="_blank" rel="noopener"><span>YouTube Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.amazon.com/tracks/B08SMM56T7" target="_blank" rel="noopener"><span>Amazon Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.deezer.com/track/1203924312" target="_blank" rel="noopener"><span>Deezer</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://tidal.com/track/170638810" target="_blank" rel="noopener"><span>Tidal</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.pandora.com/TR:40554066" target="_blank" rel="noopener"><span>Pandora</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.qobuz.com/us-en/album/witch-doctor-ronny-berna/skrrqyxbgcoaa" target="_blank" rel="noopener"><span>Qobuz</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.beatport.com/track/witch-doctor/14767551" target="_blank" rel="noopener"><span>Beatport</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/track/witch-doctor" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://volumo.com/track/4353296-witch-doctor-original-mix" target="_blank" rel="noopener"><span>Volumo</span><em>BUY</em></a></li>
+    </ul>
+    <h3 class="sec">Tracklist</h3>
+    <ol class="tracks">
+      <li><span>Witch Doctor</span><em>Ronny Berna</em></li>
+      <li><span>Witch Doctor (Nolephant Remix)</span><em>Ronny Berna</em></li>
+    </ol>
+    <div class="bio">
+      <p>If the beat is sick, you better call the Witch Doctor. That&#x27;s the title of Ronny Berna&#x27;s latest release with Sub 49 - accompanied by a remix from the newcomer Nolephant. Menacing, dark, energetic - both of these tracks will trick you into thinking you&#x27;re cured. We couldn&#x27;t ask for a better pair of tracks to celebrate our 49th release. To everyone who has been supporting us since Day 1, thank you. We are privileged to be curating tunes for your crates and ears.</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

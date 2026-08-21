@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wake Up — Elijah Soltan | Sub 49 Records</title>
+<meta name="description" content="Wake Up by Elijah Soltan — Bass House on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB031/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="Wake Up — Elijah Soltan">
+<meta property="og:description" content="Wake Up by Elijah Soltan — Bass House on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB031/">
+<meta property="og:image" content="https://f4.bcbits.com/img/a3044731559_10.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2020-05-14">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://f4.bcbits.com/img/a3044731559_10.jpg" alt="Wake Up cover art" loading="lazy">
+  <p class="meta">SUB031 &middot; Bass House &middot; 14 MAY 2020</p>
+  <h1>Wake Up</h1>
+  <h2>Elijah Soltan</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 14 MAY 2020</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://open.spotify.com/album/4t5q9eSkfX7kGQnOdGuBKb" target="_blank" rel="noopener"><span>Spotify</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.apple.com/us/album/wake-up/1512740311?i=1512740312" target="_blank" rel="noopener"><span>Apple Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://soundcloud.com/sub49records/elijah-soltan-wake-up" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.youtube.com/watch?v=PuFawwn--Ec" target="_blank" rel="noopener"><span>YouTube</span><em>WATCH</em></a></li>
+      <li><a class="btn" href="https://music.youtube.com/watch?v=PuFawwn--Ec" target="_blank" rel="noopener"><span>YouTube Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.amazon.com/tracks/B088GMXKJ3" target="_blank" rel="noopener"><span>Amazon Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.deezer.com/track/957664652" target="_blank" rel="noopener"><span>Deezer</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://tidal.com/track/141220705" target="_blank" rel="noopener"><span>Tidal</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.pandora.com/TR:31613812" target="_blank" rel="noopener"><span>Pandora</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.qobuz.com/us-en/album/wake-up-elijah-soltan/rcn1l4ddx7kpb" target="_blank" rel="noopener"><span>Qobuz</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.beatport.com/track/wake-up/13600510" target="_blank" rel="noopener"><span>Beatport</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/track/wake-up-original-mix" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://volumo.com/track/4490751-wake-up-original-mix" target="_blank" rel="noopener"><span>Volumo</span><em>BUY</em></a></li>
+    </ul>
+    <h3 class="sec">Tracklist</h3>
+    <ol class="tracks">
+      <li><span>Wake Up</span><em>Elijah Soltan</em></li>
+      <li><span>Laid Back</span><em>Elijah Soltan</em></li>
+      <li><span>Laid Back (Sadyouth Remix)</span><em>Elijah Soltan</em></li>
+      <li><span>Laid Back (Jay Peeki Remix)</span><em>Elijah Soltan</em></li>
+    </ol>
+    <div class="bio">
+      <p>Wake up! Wake up! It&#x27;s time for you to listen to Elijah Soltan&#x27;s latest EP of bangers, &#x27;Wake Up,&#x27; with remixes from Seattle heavyweights Jay Peeki and Sadyouth. As to be expected, these tracks get real funky and can fit perfectly alongside bass house or tech house. Time to drink that cup of Joe, get mad woke, and bump these tunes courtesy of Sub 49. Please stay home and stay safe during these times and thank you for your continued support of the Sub 49 movement.</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>INVESTIGATE — KIEZMN | Sub 49 Records</title>
+<meta name="description" content="INVESTIGATE by KIEZMN — Bass House on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB087/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="INVESTIGATE — KIEZMN">
+<meta property="og:description" content="INVESTIGATE by KIEZMN — Bass House on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB087/">
+<meta property="og:image" content="https://f4.bcbits.com/img/a1895092253_10.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2023-12-08">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://f4.bcbits.com/img/a1895092253_10.jpg" alt="INVESTIGATE cover art" loading="lazy">
+  <p class="meta">SUB087 &middot; Bass House &middot; 08 DECEMBER 2023</p>
+  <h1>INVESTIGATE</h1>
+  <h2>KIEZMN</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 08 DECEMBER 2023</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://open.spotify.com/album/6nYlTk0npekeyubh2QudlH" target="_blank" rel="noopener"><span>Spotify</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.apple.com/us/album/investigate/1718075826?i=1718075827" target="_blank" rel="noopener"><span>Apple Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://soundcloud.com/sub49records/tim-kietzmann-investigate" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.youtube.com/watch?v=nyjUUtULkfM" target="_blank" rel="noopener"><span>YouTube</span><em>WATCH</em></a></li>
+      <li><a class="btn" href="https://music.youtube.com/watch?v=nyjUUtULkfM" target="_blank" rel="noopener"><span>YouTube Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.deezer.com/track/2555524452" target="_blank" rel="noopener"><span>Deezer</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://tidal.com/track/331842333" target="_blank" rel="noopener"><span>Tidal</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.qobuz.com/us-en/album/investigate-kiezmn/ad649nyudrs3b" target="_blank" rel="noopener"><span>Qobuz</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.beatport.com/track/investigate/18397966" target="_blank" rel="noopener"><span>Beatport</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/track/investigate" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://volumo.com/track/3834566-investigate-original-mix" target="_blank" rel="noopener"><span>Volumo</span><em>BUY</em></a></li>
+    </ul>
+    <div class="bio">
+      <p>Let&#x27;s dive deep into this case file. &#x27;INVESTIGATE&#x27; by Tim Kietzmann is blend of Techno, Bass House, and G-House all in a tight package. Born in a small town in Germany in 1999, Tim Kietzmann has been in love with 4/4 music at an early age. He became fascinated by house music that had sonic characteristics of dark tones and heavy bass. This is evident in his track that utilizes an aggressive synth paired with a bouncy bass line. His newest track &#x27;INVESTIGATE&#x27; combines an atmosphere of gloom with high energy bass stabs, along with powerful vocals that&#x27;ll be sure to set the scene on the dance floor.</p>
+      <p>Please enjoy responsibility, and thank you for being a part of the sub 49 nation.</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

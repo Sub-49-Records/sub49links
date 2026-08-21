@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Higher — DiscoTime, JaKuna | Sub 49 Records</title>
+<meta name="description" content="Higher by DiscoTime, JaKuna — Tech House on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB094/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="Higher — DiscoTime, JaKuna">
+<meta property="og:description" content="Higher by DiscoTime, JaKuna — Tech House on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB094/">
+<meta property="og:image" content="https://i.imgur.com/KEYFkGO.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2024-04-26">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://i.imgur.com/KEYFkGO.png" alt="Higher cover art" loading="lazy">
+  <p class="meta">SUB094 &middot; Tech House &middot; 26 APRIL 2024</p>
+  <h1>Higher</h1>
+  <h2>DiscoTime, JaKuna</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 26 APRIL 2024</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://open.spotify.com/album/3dYEJICpklBxsAoU71FMBA" target="_blank" rel="noopener"><span>Spotify</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.apple.com/us/album/go-boom/1733685699" target="_blank" rel="noopener"><span>Apple Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://soundcloud.com/sub49records/discotime-jakuna-higher" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.youtube.com/watch?v=aaYpw133s1c" target="_blank" rel="noopener"><span>YouTube</span><em>WATCH</em></a></li>
+      <li><a class="btn" href="https://music.youtube.com/watch?v=aaYpw133s1c" target="_blank" rel="noopener"><span>YouTube Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.amazon.com/tracks/B0CZMG9SSL" target="_blank" rel="noopener"><span>Amazon Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.deezer.com/track/2732482881" target="_blank" rel="noopener"><span>Deezer</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://tidal.com/track/357853207" target="_blank" rel="noopener"><span>Tidal</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.pandora.com/TR:149042083" target="_blank" rel="noopener"><span>Pandora</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.qobuz.com/us-en/album/higher-discotime-jakuna/vmmnd48ulfiuc" target="_blank" rel="noopener"><span>Qobuz</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.beatport.com/track/higher/18873678" target="_blank" rel="noopener"><span>Beatport</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/track/higher" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://volumo.com/track/3760173-higher-original-mix" target="_blank" rel="noopener"><span>Volumo</span><em>BUY</em></a></li>
+    </ul>
+    <div class="bio">
+      <p>We&#x27;re taking it up a notch for our Sub 49 catalog. Introducing &#x27;Higher&#x27; by DiscoTime &amp; JaKuna, a dynamic collaboration between two talented artists from opposite sides of the globe. DiscoTime, hailing from New York City, brings his deep love for house music to the track, while JaKuna, a rising star from Santiago, Chile, infuses diverse musical elements and genre-bending sound into the mix.</p>
+      <p>DiscoTime has previously released with Sub49, showcasing his talent for crafting infectious beats that move the dance floor. JaKuna, on the other hand, has released with Candy Flip, Jendex Records, and Move Yourself, solidifying his position as a rising star in the tech/bass house scene.</p>
+      <p>&#x27;Higher&#x27; features classic piano chords that dance around a soulful vocal, a wide gritty reese bass, and a thumping bassline that sits on a punchy groove. This track will definitely raise the energy on the dance floor, so be sure to add it to your arsenal.</p>
+      <p>Please enjoy responsibly, and thank you for being a part of the Sub 49 nation.</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

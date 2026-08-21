@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rain Maker — Haelix | Sub 49 Records</title>
+<meta name="description" content="Rain Maker by Haelix — Bass House on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB009/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="Rain Maker — Haelix">
+<meta property="og:description" content="Rain Maker by Haelix — Bass House on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB009/">
+<meta property="og:image" content="https://f4.bcbits.com/img/a3775418999_10.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2019-04-18">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://f4.bcbits.com/img/a3775418999_10.jpg" alt="Rain Maker cover art" loading="lazy">
+  <p class="meta">SUB009 &middot; Bass House &middot; 18 APRIL 2019</p>
+  <h1>Rain Maker</h1>
+  <h2>Haelix</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 18 APRIL 2019</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://open.spotify.com/album/5vcNnaL2bPwKLj97o2Mhcs" target="_blank" rel="noopener"><span>Spotify</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.apple.com/us/album/rain-maker/1458718417?i=1458718420" target="_blank" rel="noopener"><span>Apple Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://soundcloud.com/sub49records/haelix-rain-maker" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.youtube.com/watch?v=FEBeL874L5A" target="_blank" rel="noopener"><span>YouTube</span><em>WATCH</em></a></li>
+      <li><a class="btn" href="https://music.youtube.com/watch?v=FEBeL874L5A" target="_blank" rel="noopener"><span>YouTube Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.deezer.com/track/663617502" target="_blank" rel="noopener"><span>Deezer</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://tidal.com/track/107516181" target="_blank" rel="noopener"><span>Tidal</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.pandora.com/TR:17998937" target="_blank" rel="noopener"><span>Pandora</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.qobuz.com/us-en/album/rain-maker-haelix/pvexank5gzjwc" target="_blank" rel="noopener"><span>Qobuz</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.beatport.com/track/rain-maker/11833779" target="_blank" rel="noopener"><span>Beatport</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/track/rain-maker-original-mix" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://volumo.com/track/4746024-rain-maker-original-mix" target="_blank" rel="noopener"><span>Volumo</span><em>BUY</em></a></li>
+      <li><a class="btn btn-dl" href="hypeddit.com/track/o8vwfd" target="_blank" rel="noopener"><span>Free Download</span><em>GET</em></a></li>
+    </ul>
+    <h3 class="sec">Tracklist</h3>
+    <ol class="tracks">
+      <li><span>Rain Maker</span><em>Haelix</em></li>
+      <li><span>Light Up The System</span><em>Haelix</em></li>
+    </ol>
+    <div class="bio">
+      <p>Sub 49 proudly presents, HAELIX&#x27;s &#x27;Rain Maker&#x27; EP. Dripping with nasty bass lines and spacey pads, HAELIX takes you through a journey full of edge and bounce. This EP is best served on a rainy day in a dark warehouse - prepare yourself for these underground sounds, and do everything you can not to stay dry.</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

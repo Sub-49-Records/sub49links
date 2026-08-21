@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Tinder — Axon | Sub 49 Records</title>
+<meta name="description" content="La Tinder by Axon — Tech House on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB078/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="La Tinder — Axon">
+<meta property="og:description" content="La Tinder by Axon — Tech House on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB078/">
+<meta property="og:image" content="https://f4.bcbits.com/img/a3637424744_10.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2023-04-20">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://f4.bcbits.com/img/a3637424744_10.jpg" alt="La Tinder cover art" loading="lazy">
+  <p class="meta">SUB078 &middot; Tech House &middot; 20 APRIL 2023</p>
+  <h1>La Tinder</h1>
+  <h2>Axon</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 20 APRIL 2023</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://open.spotify.com/album/0YpT5Tbf1pOEiGDTRyQ1Qz" target="_blank" rel="noopener"><span>Spotify</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.apple.com/us/album/la-tinder/1680761440?i=1680761441" target="_blank" rel="noopener"><span>Apple Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://soundcloud.com/sub49records/axon-la-tinder" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.youtube.com/watch?v=9kUFxiSS5Ws" target="_blank" rel="noopener"><span>YouTube</span><em>WATCH</em></a></li>
+      <li><a class="btn" href="https://music.youtube.com/watch?v=9kUFxiSS5Ws" target="_blank" rel="noopener"><span>YouTube Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.amazon.com/albums/B0C1K444V5" target="_blank" rel="noopener"><span>Amazon Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.deezer.com/track/2223266217" target="_blank" rel="noopener"><span>Deezer</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://tidal.com/track/288457632" target="_blank" rel="noopener"><span>Tidal</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.pandora.com/TR:92663605" target="_blank" rel="noopener"><span>Pandora</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.qobuz.com/us-en/album/la-tinder-axon/vcxo3c4fbx1vb" target="_blank" rel="noopener"><span>Qobuz</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.beatport.com/track/la-tinder/17591294" target="_blank" rel="noopener"><span>Beatport</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/track/la-tinder" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://volumo.com/track/3954397-la-tinder-original-mix" target="_blank" rel="noopener"><span>Volumo</span><em>BUY</em></a></li>
+    </ul>
+    <h3 class="sec">Tracklist</h3>
+    <ol class="tracks">
+      <li><span>La Tinder</span><em>Axon</em></li>
+      <li><span>La Tinder</span><em>AXON (JPN)</em></li>
+    </ol>
+    <div class="bio">
+      <p>AXON has been taking the world by storm since his debut in the fall of 2020. Receiving major recognition in his home country of Japan, he charted 1st on the Japanese iTunes HOUSE chart with his previous release, &#x27;I Can Love You&#x27;, and charted 4th in the world on the Beatport Bass House Chart with his track &#x27;YOUR ACTION&#x27;. His stack label catalogue now includes Sub 49, along with HOUSE VIEWS, Complex Destroyerz, Loud Memory, Epic Tone Records, and many more. Let&#x27;s all give him a warm welcome to the Sub 49 family.</p>
+      <p>Please enjoy responsibly, and thank you for being a part of the Sub 49 Nation.</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

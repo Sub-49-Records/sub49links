@@ -1,0 +1,91 @@
+/* Sub 49 Records — smart links. Black / white / #ff0033. Bold, uppercase, square. */
+*,*::before,*::after { box-sizing: border-box; }
+body {
+  margin: 0; background: #000; color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+.top, .bot {
+  padding: 18px 20px; text-align: center; font-size: 12px;
+  letter-spacing: .18em; text-transform: uppercase;
+}
+.top { border-bottom: 1px solid #1c1c1c; }
+.bot { border-top: 1px solid #1c1c1c; color: #777; margin-top: 48px; }
+.bot a:hover { color: #ff0033; }
+.wordmark { font-weight: 800; letter-spacing: .22em; }
+.wordmark:hover { color: #ff0033; }
+
+.release, .catalogue { max-width: 460px; margin: 0 auto; padding: 32px 20px 0; }
+.catalogue { max-width: 720px; }
+
+.art { display: block; width: 100%; aspect-ratio: 1/1; object-fit: cover; background: #111; }
+.art-blank {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 10px; border: 1px solid #222; border-top: 4px solid #ff0033;
+}
+.art-blank span { font-size: 11px; letter-spacing: .3em; color: #666; }
+.art-blank strong { font-size: 34px; font-weight: 800; letter-spacing: .06em; }
+
+.meta {
+  margin: 22px 0 6px; font-size: 11px; letter-spacing: .18em;
+  text-transform: uppercase; color: #8a8a8a;
+}
+h1 { margin: 0; font-size: 30px; font-weight: 800; text-transform: uppercase; line-height: 1.05; }
+h2 {
+  margin: 8px 0 26px; font-size: 14px; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: #ff0033;
+}
+
+.links { list-style: none; margin: 0; padding: 0; }
+.links li { margin-bottom: 8px; }
+.btn {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 15px 18px; background: #fff; color: #000;
+  font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  border: 2px solid #fff; border-radius: 0;   /* never rounded */
+  transition: background .12s, color .12s, border-color .12s;
+}
+.btn em { font-style: normal; font-size: 11px; letter-spacing: .16em; }
+.btn:hover { background: #ff0033; border-color: #ff0033; color: #fff; }
+.btn-dl { background: #000; color: #fff; border-color: #fff; }
+.btn-dl:hover { background: #fff; color: #000; }
+.none { color: #777; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+
+.soon { border: 1px solid #222; border-top: 4px solid #ff0033; padding: 22px; text-align: center; }
+.soon-label { margin: 0; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: #8a8a8a; }
+.countdown { margin: 10px 0; font-size: 30px; font-weight: 800; letter-spacing: .04em; }
+.soon-note { margin: 0; font-size: 12px; color: #777; line-height: 1.5; }
+
+.sec {
+  margin: 34px 0 12px; font-size: 11px; font-weight: 700; letter-spacing: .2em;
+  text-transform: uppercase; color: #8a8a8a;
+}
+.tracks { margin: 0; padding: 0; list-style: none; counter-reset: t; }
+.tracks li {
+  display: flex; justify-content: space-between; gap: 14px; padding: 11px 0;
+  border-bottom: 1px solid #1c1c1c; font-size: 13px;
+}
+.tracks li::before {
+  counter-increment: t; content: counter(t, decimal-leading-zero);
+  color: #ff0033; font-weight: 700; margin-right: 12px;
+}
+.tracks em { font-style: normal; color: #8a8a8a; text-align: right; }
+.bio { margin-top: 30px; color: #b4b4b4; font-size: 14px; line-height: 1.65; }
+.bio p { margin: 0 0 14px; }
+
+.cat { list-style: none; margin: 26px 0 0; padding: 0; }
+.cat a {
+  display: grid; grid-template-columns: 82px 1fr auto; gap: 14px; align-items: baseline;
+  padding: 13px 0; border-bottom: 1px solid #1c1c1c;
+}
+.cat a:hover { background: #0d0d0d; }
+.cat .c { font-size: 12px; font-weight: 700; letter-spacing: .1em; color: #ff0033; }
+.cat .n { font-size: 15px; font-weight: 700; text-transform: uppercase; }
+.cat .a { display: none; }
+.cat em { font-style: normal; font-size: 11px; color: #777; }
+
+@media (min-width: 620px) {
+  .cat a { grid-template-columns: 82px 1fr 1fr auto; }
+  .cat .a { display: block; font-size: 13px; color: #8a8a8a; }
+}
