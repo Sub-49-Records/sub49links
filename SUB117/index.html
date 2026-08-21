@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Favorite Flavor — James Gatz | Sub 49 Records</title>
+<meta name="description" content="Favorite Flavor by James Gatz — Bass House on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB117/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="Favorite Flavor — James Gatz">
+<meta property="og:description" content="Favorite Flavor by James Gatz — Bass House on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB117/">
+<meta property="og:image" content="https://i.imgur.com/xiqSnrm.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2025-10-10">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://i.imgur.com/xiqSnrm.png" alt="Favorite Flavor cover art" loading="lazy">
+  <p class="meta">SUB117 &middot; Bass House &middot; 10 OCTOBER 2025</p>
+  <h1>Favorite Flavor</h1>
+  <h2>James Gatz</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 10 OCTOBER 2025</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://open.spotify.com/album/5gzpsT2DvXmgm7vIw2KdDg" target="_blank" rel="noopener"><span>Spotify</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.apple.com/us/album/favorite-flavor/1844730923" target="_blank" rel="noopener"><span>Apple Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://soundcloud.com/sub49records/james-gatz-favorite-flavor" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.youtube.com/watch?v=dwTzzTVppPk" target="_blank" rel="noopener"><span>YouTube</span><em>WATCH</em></a></li>
+      <li><a class="btn" href="https://music.youtube.com/watch?v=dwTzzTVppPk" target="_blank" rel="noopener"><span>YouTube Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.amazon.com/tracks/B0FTMMNTDY" target="_blank" rel="noopener"><span>Amazon Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.deezer.com/track/3583510401" target="_blank" rel="noopener"><span>Deezer</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://tidal.com/track/464532826" target="_blank" rel="noopener"><span>Tidal</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.pandora.com/TR:175105889" target="_blank" rel="noopener"><span>Pandora</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.qobuz.com/us-en/album/favorite-flavor-james-gatz/m5ulhzfrc33dc" target="_blank" rel="noopener"><span>Qobuz</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.beatport.com/track/favorite-flavor/22008948" target="_blank" rel="noopener"><span>Beatport</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/track/favorite-flavor" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://volumo.com/track/5507113-favorite-flavor-original-mix" target="_blank" rel="noopener"><span>Volumo</span><em>BUY</em></a></li>
+      <li><a class="btn btn-dl" href="https://hypeddit.com/jamesgatz/favoriteflavordownload" target="_blank" rel="noopener"><span>Free Download</span><em>GET</em></a></li>
+    </ul>
+    <div class="bio">
+      <p>My Favorite Flavor’s you baby. It’s that time of the year again where co-owner and label manager of Sub 49 Records, James Gatz, drops a once a year tune. “Favorite Flavor” is a UKG inspired Future House track that challenges genres, making space for the unexplored side of Bass House. As he says, “The best part of being a label manager? Doing whatever the hell you want”. He loves to use the opportunity to create an experimental banger that might not be for all dance floors.  As the news agency, Elated Society, once said, “James Gatz brings in a new era of 4/4 music by blending elements from multiple genres and pushing the boundaries of what is considered House and Techno in his production.”</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

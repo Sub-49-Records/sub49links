@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MY MIND — Exhibited | Sub 49 Records</title>
+<meta name="description" content="MY MIND by Exhibited — UK Dub on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB116/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="MY MIND — Exhibited">
+<meta property="og:description" content="MY MIND by Exhibited — UK Dub on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB116/">
+<meta property="og:image" content="https://i.imgur.com/OQ2qlQj.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2025-09-26">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://i.imgur.com/OQ2qlQj.png" alt="MY MIND cover art" loading="lazy">
+  <p class="meta">SUB116 &middot; UK Dub &middot; 26 SEPTEMBER 2025</p>
+  <h1>MY MIND</h1>
+  <h2>Exhibited</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 26 SEPTEMBER 2025</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://open.spotify.com/album/4Rk1PwdteWposnewkCGgR8" target="_blank" rel="noopener"><span>Spotify</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.apple.com/us/album/crave-state-single/1840447926" target="_blank" rel="noopener"><span>Apple Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://soundcloud.com/sub49records/exhibited-in-my-mind" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.youtube.com/watch?v=vxzlcQXA9XQ" target="_blank" rel="noopener"><span>YouTube</span><em>WATCH</em></a></li>
+      <li><a class="btn" href="https://music.youtube.com/watch?v=vxzlcQXA9XQ" target="_blank" rel="noopener"><span>YouTube Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.amazon.com/albums/B0FRJ5XTW9" target="_blank" rel="noopener"><span>Amazon Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.deezer.com/track/3560203391" target="_blank" rel="noopener"><span>Deezer</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://tidal.com/track/461443778" target="_blank" rel="noopener"><span>Tidal</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.pandora.com/TR:173393460" target="_blank" rel="noopener"><span>Pandora</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.qobuz.com/us-en/album/crave-state-ep-exhibited/bg6yvsmhinqha" target="_blank" rel="noopener"><span>Qobuz</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.beatport.com/track/in-my-mind/21805991" target="_blank" rel="noopener"><span>Beatport</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/album/crave-state-ep" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://volumo.com/track/3516752-in-my-mind-original-mix" target="_blank" rel="noopener"><span>Volumo</span><em>BUY</em></a></li>
+      <li><a class="btn btn-dl" href="https://hypeddit.com/exhibited/giveittomelikedownload" target="_blank" rel="noopener"><span>Free Download</span><em>GET</em></a></li>
+    </ul>
+    <h3 class="sec">Tracklist</h3>
+    <ol class="tracks">
+      <li><span>MY MIND</span><em>Exhibited</em></li>
+      <li><span>GIVE IT TO ME LIKE</span><em>Exhibited</em></li>
+    </ol>
+    <div class="bio">
+      <p>We’ve been craving this EP ever since we first heard it. Crave State EP by Exhibited has been launching people in a state of addiction at our shows. This promising young lad is making his 1st record label debut on Sub 49 Records and we’re excited to see what he cooks up next. He has quite a few independent releases under his belt, and these tracks are gonna take him to the big leagues.  This EP consists of 2 tracks, “IN MY MIND” and “GIVE IT TO ME LIKE”. Drawing from UK Garage, House, and Dubstep, this EP has that UK sound that everybody&#x27;s been craving, perfect for afterhour dancefloors and heavy-hitting sets.</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

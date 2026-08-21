@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Takin&#x27; My Time — Labeeb | Sub 49 Records</title>
+<meta name="description" content="Takin&#x27; My Time by Labeeb — Melodic House on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB114/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="Takin&#x27; My Time — Labeeb">
+<meta property="og:description" content="Takin&#x27; My Time by Labeeb — Melodic House on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB114/">
+<meta property="og:image" content="https://i.imgur.com/KN8U1ri.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2025-08-20">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://i.imgur.com/KN8U1ri.png" alt="Takin&#x27; My Time cover art" loading="lazy">
+  <p class="meta">SUB114 &middot; Melodic House &middot; 20 AUGUST 2025</p>
+  <h1>Takin&#x27; My Time</h1>
+  <h2>Labeeb</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 20 AUGUST 2025</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://open.spotify.com/album/3UIzsd4HikcHGRcLjwQeiL" target="_blank" rel="noopener"><span>Spotify</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.apple.com/us/album/takin-my-time/1827247899" target="_blank" rel="noopener"><span>Apple Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://soundcloud.com/sub49records/labeeb-takin-my-time" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.youtube.com/watch?v=uqE8H7GR1PA" target="_blank" rel="noopener"><span>YouTube</span><em>WATCH</em></a></li>
+      <li><a class="btn" href="https://music.youtube.com/watch?v=uqE8H7GR1PA" target="_blank" rel="noopener"><span>YouTube Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://music.amazon.com/tracks/B0FHWC32N8" target="_blank" rel="noopener"><span>Amazon Music</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.deezer.com/track/3469832141" target="_blank" rel="noopener"><span>Deezer</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://tidal.com/track/453353180" target="_blank" rel="noopener"><span>Tidal</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.pandora.com/TR:169015134" target="_blank" rel="noopener"><span>Pandora</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.qobuz.com/us-en/album/takin-my-time-labeeb/g4ub9gwbwpzoa" target="_blank" rel="noopener"><span>Qobuz</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://www.beatport.com/track/takin-my-time/20800376" target="_blank" rel="noopener"><span>Beatport</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/track/takin-my-time" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+      <li><a class="btn" href="https://volumo.com/track/3798116-takin-my-time-original-mix" target="_blank" rel="noopener"><span>Volumo</span><em>BUY</em></a></li>
+      <li><a class="btn btn-dl" href="https://hypeddit.com/labeeb/takinmytimedownload" target="_blank" rel="noopener"><span>Free Download</span><em>GET</em></a></li>
+    </ul>
+    <div class="bio">
+      <p>You better take some time to check out this release. Sub 49 Records is proud to present “Takin’ My Time” by Labeeb. While attending Penn State University studying STEM, Labeeb fell in love with electronic music, eventually becoming president of the EDM Club. After graduating, he decided to launch the Labeeb project in 2023. Since then, he’s had 7 releases signed on notable record labels such as WyldeCard, Force of Habit, Storytime, Get Down Recs, and more! “Takin’ My Time” is a vibey summer banger. Featuring a solid bassline paired with luscious synths, soulful vocals, and vocal chops that swim around your head to create an atmosphere that makes you relive the best moments in your life.</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>

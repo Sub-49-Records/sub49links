@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bassline Criminal Feat. KXNE — Average Citizens | Sub 49 Records</title>
+<meta name="description" content="Bassline Criminal Feat. KXNE by Average Citizens — Garage on Sub 49 Records, Seattle.">
+<link rel="canonical" href="https://link.sub49.com/SUB126/">
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="Bassline Criminal Feat. KXNE — Average Citizens">
+<meta property="og:description" content="Bassline Criminal Feat. KXNE by Average Citizens — Garage on Sub 49 Records, Seattle.">
+<meta property="og:url" content="https://link.sub49.com/SUB126/">
+<meta property="og:image" content="https://images.squarespace-cdn.com/content/67340b6f0daad1673ea93719/01fa3888-3adf-4dd2-83f4-7dec5d979d4e/ALBUM+COVER+Bassline+Criminal+%28Reduced%29.png?content-type=image%2Fpng">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/sub49.css">
+</head>
+<body data-release="2026-09-18">
+<header class="top">
+  <a class="wordmark" href="https://www.sub49.com">SUB 49 RECORDS</a>
+</header>
+<main class="release">
+  <img class="art" src="https://images.squarespace-cdn.com/content/67340b6f0daad1673ea93719/01fa3888-3adf-4dd2-83f4-7dec5d979d4e/ALBUM+COVER+Bassline+Criminal+%28Reduced%29.png?content-type=image%2Fpng" alt="Bassline Criminal Feat. KXNE cover art" loading="lazy">
+  <p class="meta">SUB126 &middot; Garage &middot; 18 SEPTEMBER 2026</p>
+  <h1>Bassline Criminal Feat. KXNE</h1>
+  <h2>Average Citizens</h2>
+
+  <section class="soon" hidden>
+    <p class="soon-label">Out 18 SEPTEMBER 2026</p>
+    <p class="countdown" id="countdown"></p>
+    <p class="soon-note">This page becomes the full link hub the moment it drops. Bookmark it.</p>
+  </section>
+
+  <section class="out">
+    <ul class="links">
+      <li><a class="btn" href="https://soundcloud.com/sub49records/average-citizens-bassline-criminal" target="_blank" rel="noopener"><span>SoundCloud</span><em>PLAY</em></a></li>
+      <li><a class="btn" href="https://sub49records.bandcamp.com/track/bassline-criminal-feat-kxne" target="_blank" rel="noopener"><span>Bandcamp</span><em>BUY</em></a></li>
+    </ul>
+    <div class="bio">
+      <p>We’re all potential criminals; It’s just a matter of circumstance. In our case, some say we harbor the delinquent, but we say we give them a home. We’d like to welcome back criminal masterminds Average Citizens with their junior single titled “Bassline Criminal” along with a new addition to our Artist roster, KXNE from London, UK. Bassline Criminal feat. KXNE is a smooth criminal, choosing groovy over heavy. It’s got all the bounce that garage has to offer, with just enough bass to give you a face. Average Citizens has been on a roll, recently being added to Spotify bangers editorial playlist while touring the world. Performing at dream festivals such as Shambhala, Electric Love, and more. KXNE is a veteran in the electronic music scene with an impressive resume. After rising up with BRANDON with their track titled “Shades On” via gold digger, clocking in a cool 5M streams, he’s been making a mark in history, releasing on industry leading labels such as Universal, Ministry of Sound, Repopulate Mars, Terminal Underground, and Confession just to name a few. He offers ghost writing, vocal packs, Voice overs and more under his brand name DXSHMUSIC.</p>
+      <p>Continuing this year’s journey of making releases more memorable, we have 2 special parties lined up for this release in collaboration with Seattle Paddle Raves and the French Guys Bakery. Keep your eyes peeled, follow us, and we’ll see you at our next song release party. It’d be criminal if you missed out on this release.</p>
+      <p>Please enjoy responsibly, and thank you for being a part of Sub 49 World Wide.</p>
+    </div>
+  </section>
+</main>
+<footer class="bot">
+  <a href="https://www.sub49.com">sub49.com</a> &middot; Seattle &middot; est. 2018
+</footer>
+<script>
+/* The only dynamic thing on the page: before the release date show the countdown,
+   on or after it show the links. No rebuild needed on release day. */
+(function () {
+  var iso = document.body.dataset.release;
+  if (!iso) return;
+  var out = new Date(iso + 'T00:00:00');
+  var soon = document.querySelector('.soon'), live = document.querySelector('.out');
+  function tick() {
+    var left = out - new Date();
+    if (left <= 0) { soon.hidden = true; live.hidden = false; return; }
+    soon.hidden = false; live.hidden = true;
+    var d = Math.floor(left / 864e5), h = Math.floor(left % 864e5 / 36e5),
+        m = Math.floor(left % 36e5 / 6e4);
+    document.getElementById('countdown').textContent = d + 'd ' + h + 'h ' + m + 'm';
+    setTimeout(tick, 60000);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>
