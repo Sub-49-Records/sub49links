@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not Found | Sub 49 Records</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/assets/sub49.css">
+<script>
+(function () {
+  var known = ["SUB121","SUB122","SUB123","SUB124","SUB125","SUB126","SUB103","SUB104","SUB105","SUB106","SUB107","SUB108","SUB109","SUB110","SUB111","SUB112","SUB113","SUB114","SUB115","SUB116","SUB117","SUB118","SUB119","SUB120","SUB089","SUB090","SUB091","SUB092","SUB093","SUB094","SUB095","SUB096","SUB097","SUB098","SUB099","SUB100","SUB101","SUB102","SUB077","SUB078","SUB079","SUB080","SUB081","SUB082","SUB083","SUB084","SUB085","SUB086","SUB087","SUB088","SUB063","SUB064","SUB065","SUB066","SUB067","SUB068","SUB069","SUB070","SUB071","SUB072","SUB073","SUB074","SUB075","SUB076","SUB047","SUB048","SUB049","SUB050","SUB051","SUB052","SUB053","SUB054","SUB055","SUB056","SUB057","SUB058","SUB059","SUB060","SUB061","SUB062","SUB023","SUB024","SUB025","SUB026","SUB027","SUB028","SUB029","SUB030","SUB031","SUB032","SUB033","SUB034","SUB035","SUB036","SUB037","SUB038","SUB039","SUB040","SUB041","SUB042","SUB043","SUB044","SUB045","SUB046","SUB001","SUB002","SUB003","SUB004","SUB005","SUB006","SUB007","SUB008","SUB009","SUB010","SUB011","SUB012","SUB013","SUB014","SUB015","SUB016","SUB017","SUB018","SUB019","SUB020","SUB021","SUB022"];
+  var m = /(sub\d+)/i.exec(location.pathname);
+  if (m) {
+    var cat = m[1].toUpperCase();
+    if (known.indexOf(cat) >= 0) {
+      location.replace('/' + cat + '/' + location.search + location.hash);
+    }
+  }
+})();
+</script>
+</head>
+<body>
+<main class="card">
+  <div class="top"><a class="home" href="https://www.sub49.com">&larr; Sub 49 Records</a></div>
+  <div class="cat">404</div>
+  <h1 class="title">No Such Release</h1>
+  <div class="date">That address is not in the catalogue</div>
+  <a class="browse" href="https://link.sub49.com/">Browse all releases</a>
+  <div class="foot"><a href="https://www.sub49.com">Sub 49 Records</a></div>
+</main>
+</body>
+</html>
